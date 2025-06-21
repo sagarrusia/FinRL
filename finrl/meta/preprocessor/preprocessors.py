@@ -39,6 +39,7 @@ def convert_to_datetime(time):
     time_fmt = "%Y-%m-%dT%H:%M:%S"
     if isinstance(time, str):
         return datetime.datetime.strptime(time, time_fmt)
+    return time
 
 
 class GroupByScaler(BaseEstimator, TransformerMixin):
